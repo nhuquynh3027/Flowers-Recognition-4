@@ -222,7 +222,7 @@ def load_my_model():
     model_path = 'flowers_recognition_model.h5'
     if not os.path.exists(model_path):
         with st.spinner('Đang tải mô hình AI lần đầu (15–30 giây)…'):
-            url = "https://www.dropbox.com/scl/fi/47q6tpg4njj1l4opx8ews/flowers_recognition_model.h5?rlkey=ulr0e5mghcomgtmdspxdovf7v&st=p6t06tyu&dl=1"
+            url = "https://www.dropbox.com/scl/fi/13eqcmw3idsoyoqv84hdg/flowers_recognition_model.h5?rlkey=xiiglckvv690v5uxbutsrt2oc&st=8cjyf1hk&dl=1"
             urllib.request.urlretrieve(url, model_path)
     return tf.keras.models.load_model(model_path, compile=False)
 
